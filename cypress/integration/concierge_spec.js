@@ -52,7 +52,7 @@ function fillFormAndContinue(data) {
         break
 
       default:
-        cy.get(`input[name='${name}']`).first().type(val)
+        cy.get(`input[name='${name}']`).first().clear().type(val)
     }
   })
 

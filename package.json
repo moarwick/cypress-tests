@@ -3,7 +3,8 @@
   "description": "Evaluating Cypress.io",
   "author": "moarwick",
   "scripts": {
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "record": "cypress run --record --key c543af9f-9c95-4de1-b3a9-06f47df9c00c"
   },
   "devDependencies": {
     "cypress": "^2.1.0"
