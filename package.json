@@ -1,0 +1,11 @@
+{
+  "name": "cypress-tests",
+  "description": "Evaluating Cypress.io",
+  "author": "moarwick",
+  "scripts": {
+    "cypress": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^2.1.0"
+  }
+}
