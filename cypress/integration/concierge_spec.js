@@ -101,7 +101,7 @@ describe('Concierge Tests', () => {
     aliasXhrSubmit()
     fillFormAndContinue({ email: "test@tradesy.com", zip: "90405" })
     cy.wait('@submit').then(xhr => {
-      // redirects to signup flow
+      // assert flow redirected to signup
       cy.get($.page_signup_confirm).should('be.visible')
 
       // submit signup, assert success page
@@ -135,7 +135,7 @@ describe('Concierge Tests', () => {
             fillFormAndContinue({ street1: "100 Broadway", city: "New York" })
 
             cy.wait('@submit').then(xhr => {
-              // assert success page?
+              // assert success page
               cy.get($.page_appt_success).should('be.visible')
 
               // click continue, assert modal closed
